@@ -8,7 +8,7 @@ O código-fonte do jogo Multiversal.
 `haxelib install flixel`<br>
 `haxelib run lime setup flixel`<br>
 `haxelib run lime setup`(Pressione y quando aparecer `Do you want to install the "lime" command?`)<br>
-`haxelib run flixel-tools setup`(Pressione y quando for perguntado, coloque sua senha do pc se nescessárioro, selecione o programa que você usa para programar e pressione y novamente)<br>
+`haxelib run flixel-tools setup`(Pressione y quando for perguntado, coloque sua senha do pc se nescessário, selecione o programa que você usa para programar e pressione y novamente)<br>
 3.Instale o programa que você usará para programar:<br>
 Visual Studio Code: https://code.visualstudio.com/<br>
 Sublime Text: https://www.sublimetext.com/<br>
