@@ -1,7 +1,7 @@
 # Multiversal
 O código-fonte do jogo Multiversal.
 # Como compilar o jogo
-1.Instale o Haxe: https://haxe.org/.
+1.Instale o Haxe: https://haxe.org/.<br>
 2.Execute os seguintes comandos em um terminal:
 `haxelib setup`(Pressione Enter quando aparecer `Path:`)
 `haxelib install lime`
