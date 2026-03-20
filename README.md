@@ -54,7 +54,7 @@ Dicas:<br>
 2.Se você quiser que o jogo execute assim que ele acabar de compilar, troque no comando a palavra `build` por `test`.
 # Créditos
 Azeouza @AzeouzaOFC no YouTube<br>
- - Programador, animador, artista e ideias.<br>
+Programador, animador, artista e ideias.<br>
 <br>
 Arthur (Sem rede social)<br>
- - Autor da história, artista e ideias de design.<br>
+Autor da história, artista e ideias de design.
