@@ -3,7 +3,7 @@ The source code for the Multiversal game.
 # How to build the game
 1.Install Haxe: https://haxe.org/.<br>
 <br>
-2.Run the following commands in a terminal.:<br>
+2.Run the following commands in a terminal:<br>
 <br>
 `haxelib setup`(Press Enter when `Path:` appears)<br>
 <br>
@@ -15,7 +15,7 @@ The source code for the Multiversal game.
 <br>
 `haxelib run lime setup`(Press y when it says `Do you want to install the "lime" command?`)<br>
 <br>
-`haxelib run flixel-tools setup`(Press y when prompted, enter your PC password if necessary, select the program you use to code and press y again.)<br>
+`haxelib run flixel-tools setup`(Press y when prompted, enter your PC password if necessary, select the program you use to code and press y again).<br>
 <br>
 3.Install the program you will use to code:<br>
 <br>
