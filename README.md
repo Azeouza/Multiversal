@@ -15,7 +15,7 @@ O código-fonte do jogo Multiversal.
 <br>
 `haxelib run lime setup`(Pressione y quando aparecer `Do you want to install the "lime" command?`)<br>
 <br>
-`haxelib run flixel-tools setup`(Pressione y quando for perguntado, coloque sua senha do pc se nescessário, selecione o programa que você usa para programar e pressione y novamente)<br>
+`haxelib run flixel-tools setup`(Pressione y quando for perguntado, coloque sua senha do pc se nescessário, selecione o programa que você usa para programar e pressione y novamente).<br>
 <br>
 3.Instale o programa que você usará para programar:<br>
 <br>
@@ -27,7 +27,7 @@ FlashDevelop: https://github.com/fdorg/flashdevelop<br>
 <br>
 IntelliJ IDEA: https://www.jetbrains.com/idea/<br>
 <br>
-(Eu recomendo usar o Visual Studio Code).<br>
+(Eu recomendo você usar o Visual Studio Code).<br>
 <br>
 4.Instale o Git: https://git-scm.com/.<br>
 <br>
