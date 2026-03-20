@@ -57,5 +57,4 @@ Azeouza @AzeouzaOFC no YouTube<br>
  - Programador, animador, artista e ideias.<br>
 <br>
 Arthur (Sem rede social)<br>
- - Autor da história, artista e ideias de design.
-<br>
+ - Autor da história, artista e ideias de design.<br>
