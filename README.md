@@ -59,4 +59,4 @@ Programador, animador, artista e ideias.<br>
 Arthur (Sem rede social)<br>
 Autor da história, artista e ideias de design.<br>
 <br>
-English version of this readme: `https://github.com/Azeouza/Multiversal/edit/main/README-en-US.md`
+English version of this readme: https://github.com/Azeouza/Multiversal/edit/main/README-en-US.md
