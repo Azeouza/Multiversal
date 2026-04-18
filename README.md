@@ -57,4 +57,6 @@ Azeouza @AzeouzaOFC no YouTube<br>
 Programador, animador, artista e ideias.<br>
 <br>
 Arthur (Sem rede social)<br>
-Autor da história, artista e ideias de design.
+Autor da história, artista e ideias de design.<br>
+<br>
+English version of this readme: `https://github.com/Azeouza/Multiversal/edit/main/README-en-US.md`
