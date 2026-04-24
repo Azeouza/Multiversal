@@ -85,7 +85,7 @@ lime build windows
 lime build linux
 ```
 
-⚠️ No Linux, pode ser necessário instalar o VLC para reprodução de áudio:
+⚠️ No Linux, pode ser necessário instalar o VLC para reprodução de vídeo:
 
 ```
 sudo apt install vlc
