@@ -135,6 +135,6 @@ Story author, artist, and design ideas
 
 ---
 
-## 🌎 Portuguese version
+## 🌎 Versão em Português
 
 https://github.com/Azeouza/Multiversal/README.md
