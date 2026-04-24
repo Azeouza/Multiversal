@@ -1,6 +1,9 @@
 # Multiversal
 
-Código-fonte do jogo Multiversal.
+Multiversal é um jogo desenvolvido em HaxeFlixel.
+Este repositório contém o código-fonte completo do projeto.
+
+---
 
 ## 🛠️ Como compilar o jogo
 
@@ -82,13 +85,19 @@ lime build windows
 lime build linux
 ```
 
+⚠️ No Linux, pode ser necessário instalar o VLC para reprodução de áudio:
+
+```
+sudo apt install vlc
+```
+
 * MacOS:
 
 ```
 lime build mac
 ```
 
-* Neko (mais rápido para testes):
+* Neko (modo rápido para testes):
 
 ```
 lime test neko
@@ -129,4 +138,3 @@ Autor da história, artista e ideias de design
 ## 🌎 English version
 
 https://github.com/Azeouza/Multiversal/edit/main/README-en-US.md
-
