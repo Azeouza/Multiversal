@@ -137,4 +137,4 @@ Autor da história, artista e ideias de design
 
 ## 🌎 English version
 
-https://github.com/Azeouza/Multiversal/edit/main/README-en-US.md
+https://github.com/Azeouza/Multiversal/README-en-US.md
