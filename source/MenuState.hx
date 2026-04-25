@@ -4,16 +4,21 @@ import flixel.FlxState;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
-import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.util.FlxColor;
+import flixel.graphics.frames.FlxAtlasFrames;
 
 class MenuState extends FlxState
 {
     var bg:FlxSprite;
     var logo:FlxSprite;
-    var pressText:FlxText;
 
-    var baseScale:Float = 0.2;
+    var options:Array<String> = ["Jogar", "Créditos", "Doar", "Opções"];
+    var optionTexts:Array<FlxText> = [];
+    var optionButtons:Array<FlxSprite> = [];
+    var selected:Int = 0;
+
+    var baseScale:Float = 0.1;
+    var buttonScale:Float = 0.3;
 
     override public function create():Void
     {
@@ -42,22 +47,93 @@ class MenuState extends FlxState
         logo.updateHitbox();
 
         logo.screenCenter(X);
-        logo.y = FlxG.height * 0.15;
-
+        logo.y = FlxG.height * 0.03;
         logo.antialiasing = true;
 
         add(logo);
+
+        for (i in 0...options.length)
+        {
+            var txt = new FlxText(0, 0, 0, options[i], 32);
+            txt.setFormat("assets/fonts/comic.ttf", 32, FlxColor.RED, "center");
+
+            txt.borderStyle = OUTLINE;
+            txt.borderColor = FlxColor.YELLOW;
+            txt.borderSize = 2;
+
+            txt.screenCenter(X);
+            txt.y = 400 + i * 70;
+
+            var btn = new FlxSprite();
+            btn.loadGraphic("assets/images/botao.png");
+            btn.antialiasing = true;
+
+            var scale = Math.max(txt.width / 120, txt.height / 25) * buttonScale;
+            btn.scale.set(scale, scale);
+            btn.updateHitbox();
+
+            btn.x = txt.x + (txt.width - btn.width) / 2;
+            btn.y = txt.y - 10;
+
+            add(btn);
+            optionButtons.push(btn);
+
+            add(txt);
+            optionTexts.push(txt);
+        }
+
+        updateSelection();
+    }
+
+    function updateSelection()
+    {
+        for (i in 0...optionTexts.length)
+        {
+            var selectedNow = (i == selected);
+
+            optionTexts[i].alpha = selectedNow ? 1 : 0.5;
+            optionTexts[i].scale.set(selectedNow ? 1.25 : 1, selectedNow ? 1.25 : 1);
+
+            optionButtons[i].loadGraphic(
+                selectedNow ? "assets/images/botaoSelecionado.png" : "assets/images/botao.png"
+            );
+
+            var scale = Math.max(optionTexts[i].width / 120, optionTexts[i].height / 25) * buttonScale;
+            optionButtons[i].scale.set(scale, scale);
+            optionButtons[i].updateHitbox();
+
+            optionButtons[i].x = optionTexts[i].x + (optionTexts[i].width - optionButtons[i].width) / 2;
+            optionButtons[i].y = optionTexts[i].y - 10;
+        }
     }
 
     override public function update(elapsed:Float):Void
     {
         super.update(elapsed);
 
-        pressText.alpha = 0.5 + Math.sin(FlxG.game.ticks / 5) * 0.5;
+        if (FlxG.keys.justPressed.DOWN)
+        {
+            selected++;
+            if (selected >= options.length) selected = 0;
+            updateSelection();
+        }
+
+        if (FlxG.keys.justPressed.UP)
+        {
+            selected--;
+            if (selected < 0) selected = options.length - 1;
+            updateSelection();
+        }
 
         if (FlxG.keys.justPressed.ENTER)
         {
-            FlxG.switchState(PlayState.new);
+            switch (selected)
+            {
+                case 0: FlxG.switchState(PlayState.new);
+                case 1: trace("Créditos");
+                case 2: trace("Doar");
+                case 3: trace("Opções");
+            }
         }
     }
 }
