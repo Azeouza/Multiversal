@@ -24,6 +24,9 @@ class MenuState extends FlxState
     {
         super.create();
 
+        FlxG.sound.playMusic("assets/music/menu.ogg", 0, true);
+        FlxG.sound.music.fadeIn(2, 0, 1);
+
         bg = new FlxSprite(0, 0);
 
         bg.frames = FlxAtlasFrames.fromSparrow(
@@ -127,6 +130,8 @@ class MenuState extends FlxState
 
         if (FlxG.keys.justPressed.ENTER)
         {
+            FlxG.sound.music.stop();
+
             switch (selected)
             {
                 case 0: FlxG.switchState(PlayState.new);
