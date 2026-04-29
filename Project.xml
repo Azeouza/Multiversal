@@ -4,7 +4,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Multiversal" file="Multiversal" main="Main" version="1.0.0" company="Azeouza" />
+	<app title="Multiversal" file="Multiversal" main="Main" version="demoV1.0.1" company="Azeouza" />
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
