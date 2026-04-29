@@ -1,7 +1,7 @@
-# Multiversal
+# Multiversal Demo
 
 Multiversal is a game developed using HaxeFlixel.
-This repository contains the full source code of the project.
+This repository contains the full source code of the project demo.
 
 ---
 
