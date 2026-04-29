@@ -1,4 +1,4 @@
-# Multiversal Demmo
+# Multiversal Demo
 
 Multiversal é um jogo desenvolvido em HaxeFlixel.
 Este repositório contém o código-fonte completo da demo do projeto.
