@@ -1,5 +1,5 @@
 package;
-
+import DonateState;
 import flixel.FlxState;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -136,7 +136,7 @@ class MenuState extends FlxState
             {
                 case 0: FlxG.switchState(PlayState.new);
                 case 1: trace("Créditos");
-                case 2: trace("Doar");
+                case 2: FlxG.switchState(DonateState.new);
                 case 3: trace("Opções");
             }
         }
